@@ -12,6 +12,10 @@ body{
   --primary-color: #00F6FF; 
 }
 
+sup{
+    color: red;
+    font-size: large;
+}
 .heroSection{
     min-height: 40vh;
     background-color: rgba(0, 0, 0, 0.863);
@@ -22,7 +26,6 @@ body{
 
 nav{
     background-color: black;
-    color: red;
 }
 
 
@@ -58,4 +61,19 @@ ul{
 }
 .services-container ul li{
     /* border: 1px solid red; */
+}
+
+/* contact */
+.contact-container{
+    margin-left: 32px;
+}
+#contact form{
+    width: 75%;
+}
+@media (max-width: 500px) {
+   #contact form{
+    width: 100%;
+    padding-right: 10px;
+
+}
 }

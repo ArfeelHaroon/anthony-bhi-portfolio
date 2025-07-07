@@ -9,22 +9,22 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>IT & Media Consultants LLC | On-Site IT Services in PA, NJ, DE</title>
-    <meta name="description" content="IT & Media Consultants LLC offers professional on-site IT services including field engineer deployment, AV integration, printer setup, and network installations across Pennsylvania, New Jersey, and Delaware.">
-    <meta name="keywords" content="IT services, media integration, field engineer, AV setup, network cabling, digital signage, printer support, remote troubleshooting">
+    <meta name="description"
+        content="IT & Media Consultants LLC offers professional on-site IT services including field engineer deployment, AV integration, printer setup, and network installations across Pennsylvania, New Jersey, and Delaware.">
+    <meta name="keywords"
+        content="IT services, media integration, field engineer, AV setup, network cabling, digital signage, printer support, remote troubleshooting">
     <meta name="author" content="IT & Media Consultants LLC">
 </head>
 
 <body>
-    <div class="heroSection text-center">
-        <div class="text-white h-40">
-            <div class="top-text my-4">
-                <p class="h1 fw-bold display-4">IT & Media Consultants LLC</p>
-                <small class="text-secondary fs-4">Advanced On-Site IT & Media Field Services</small>
-            </div>
+    <header class="heroSection text-center text-white">
+        <div class="container-fluid my-3">
+            <h1 class="fw-bold display-4">IT & Media Consultants LLC</h1>
+            <p class="text-secondary fs-4">Advanced On-Site IT & Media Field Services</p>
         </div>
-    </div>
-    <nav>
-        <ul class="py-3 text-capitalize fw-bold text-large fs-5">
+    </header>
+    <nav class="py-3 text-capitalize fw-bold text-large fs-5">
+        <ul>
             <li>
                 <a href="#services">services</a>
             </li>
@@ -36,54 +36,95 @@
             </li>
         </ul>
     </nav>
-    <!-- Services -->
-     <div id="services" class="container services-container my-5 text-white text-capitalize fw-bold fs-6 bg-dark rounded-4 py-3">
-        <ul>
-             <li>
-            <p class="h1 fw-bold containes-heading">Our Services</p>
-            </li>
-        </ul>
-         <ul class="mx-2">
-            <li>
-                <p>field engineer deployment</p>
-            </li>
-            <li>
-                <p>Structured Cabling & Network Rack Setup</p>
-            </li>
-            <li>
-                <p>Access Points & Switch Installations</p>
-            </li>
+    <div class="all-sections px-2 pt-3">
+        <!-- Services -->
+        <div id="services"
+            class="container services-container my-5 text-white text-capitalize fw-bold fs-6 bg-dark rounded-4 py-3">
+            <ul>
+                <li>
+                    <p class="h1 fw-bold containes-heading">Our Services</p>
+                </li>
+            </ul>
+            <ul class="mx-2">
+                <li>
+                    <p>field engineer deployment</p>
+                </li>
+                <li>
+                    <p>Structured Cabling & Network Rack Setup</p>
+                </li>
+                <li>
+                    <p>Access Points & Switch Installations</p>
+                </li>
 
-            <li>
-                <p>POS Receipts Printer, Office & Kitchen Printer Support</p>
-            </li>
+                <li>
+                    <p>POS Receipts Printer, Office & Kitchen Printer Support</p>
+                </li>
 
-            <li>
-                <p>AV & Digital Signage Integration</p>
-            </li>
+                <li>
+                    <p>AV & Digital Signage Integration</p>
+                </li>
 
-            <li>
-                <p>Digital Menuboard Troubleshoot & Repair</p>
-            </li>
+                <li>
+                    <p>Digital Menuboard Troubleshoot & Repair</p>
+                </li>
 
-            <li>
-                <p>Remote Troubleshooting & Support Contracts</p>
-            </li>
-        </ul>
-     </div>
+                <li>
+                    <p>Remote Troubleshooting & Support Contracts</p>
+                </li>
+            </ul>
+        </div>
 
-     <!-- about -->
-     <div id="about" class="container about-container text-white text-capitalize fw-bold fs-6 bg-dark rounded-4 py-3">
-        <ul>
-            <li>
-                <p class="h1 fw-bold containes-heading">about us</p>
-            </li>
-            <li>
-                <p class="lh-lg">IT & Media Consultants LLC is a trusted provider of on-site IT and media infrastructure support. We specialize in full-service field engineering, network hardware deployment, and media system integration for retail, restaurants, offices, and enterprise networks across Pennsylvania, New Jersey, and Delaware.</p>
-            </li>
-        </ul>
-     </div>
-     
+        <!-- about -->
+        <div id="about"
+            class="container about-container text-white text-capitalize fw-bold fs-6 bg-dark rounded-4 py-3">
+            <ul>
+                <li>
+                    <p class="h1 fw-bold containes-heading">about us</p>
+                </li>
+                <li>
+                    <p class="lh-lg">IT & Media Consultants LLC is a trusted provider of on-site IT and media
+                        infrastructure support. We specialize in full-service field engineering, network hardware
+                        deployment, and media system integration for retail, restaurants, offices, and enterprise
+                        networks across Pennsylvania, New Jersey, and Delaware.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- contact -->
+        <section id="contact" class="container my-5 bg-dark text-white text-capitalize fw-bold fs-6 rounded-4 py-3">
+            <div class="contact-container">
+                <p class="h1 fw-bold containes-heading">contact us</p>
+                <div>
+                    <p> Email: support@itmediaconsultants.com
+                        <br>
+                        Phone: (215) 459-9775
+                        <br>
+                        Service Areas: PA, NJ, DE
+                    </p>
+                    
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="InputName" class="form-label">Full Name <sup>*</sup></label>
+                        <input type="text" name="name" class="form-control" id="InputName" placeholder="John Doe"
+                            autocomplete="name" aria-required="true" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Email address <sup>*</sup></label>
+                        <input type="email" name="email" class="form-control" id="InputEmail" placeholder="Enter your email"
+                           autocomplete="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message <sup>*</sup></label>
+                        <textarea class="form-control" name="message" id="message" rows="4" placeholder="Type your message here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
