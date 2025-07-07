@@ -101,25 +101,35 @@
                         <br>
                         Service Areas: PA, NJ, DE
                     </p>
-                    
+
                 </div>
                 <form>
                     <div class="mb-3">
-                        <label for="InputName" class="form-label">Full Name <sup>*</sup></label>
+                        <label for="InputName" class="form-label">Full Name <span class="text-danger">*</span></label>
                         <input type="text" name="name" class="form-control" id="InputName" placeholder="John Doe"
                             autocomplete="name" aria-required="true" required>
                     </div>
                     <div class="mb-3">
-                        <label for="InputEmail" class="form-label">Email address <sup>*</sup></label>
-                        <input type="email" name="email" class="form-control" id="InputEmail" placeholder="Enter your email"
-                           autocomplete="email" required>
+                        <label for="InputEmail" class="form-label">Email address <span class="text-danger">*</span></label>
+                        <input type="email" name="email" class="form-control" id="InputEmail"
+                            placeholder="Enter your email" autocomplete="email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Your Message <sup>*</sup></label>
-                        <textarea class="form-control" name="message" id="message" rows="4" placeholder="Type your message here..."
-                            required></textarea>
+                        <label for="InputPhone" class="form-label fw-semibold">Phone Number <span class="text-danger">*</span></label>
+                        <input type="tel" name="phone" class="form-control" id="InputPhone"
+                            placeholder="e.g. (123) 456-7890" required autocomplete="tel">
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    <div class="mb-3">
+                        <label for="InputCompany" class="form-label fw-semibold">Company Name</label>
+                        <input type="text" name="company" class="form-control" id="InputCompany"
+                            placeholder="Enter your company name" autocomplete="organization">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
+                        <textarea class="form-control" name="message" id="message" rows="4"
+                            placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="rounded-2 w-100 fs-5 fw-bold py-2">Send Message</button>
                 </form>
             </div>
         </section>
