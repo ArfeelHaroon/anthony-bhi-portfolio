@@ -105,19 +105,21 @@
                     </p>
 
                 </div>
-                <form>
+                <form id="contact-form">
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Full Name <span class="text-danger">*</span></label>
                         <input type="text" name="name" class="form-control" id="InputName" placeholder="John Doe"
                             autocomplete="name" aria-required="true" required>
                     </div>
                     <div class="mb-3">
-                        <label for="InputEmail" class="form-label">Email address <span class="text-danger">*</span></label>
+                        <label for="InputEmail" class="form-label">Email address <span
+                                class="text-danger">*</span></label>
                         <input type="email" name="email" class="form-control" id="InputEmail"
                             placeholder="Enter your email" aria-required="true" autocomplete="email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="InputPhone" class="form-label fw-semibold">Phone Number <span class="text-danger">*</span></label>
+                        <label for="InputPhone" class="form-label fw-semibold">Phone Number <span
+                                class="text-danger">*</span></label>
                         <input type="tel" name="phone" class="form-control" id="InputPhone"
                             placeholder="e.g. (123) 456-7890" aria-required="true" required autocomplete="tel">
                     </div>
@@ -136,10 +138,16 @@
             </div>
         </section>
     </div>
-
+    <footer class="bg-dark mt-3 text-center text-white mb-0 py-4">
+        <p class="m-0">© <span id="currentYear"></span> IT & Media Consultants LLC. All rights reserved.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
