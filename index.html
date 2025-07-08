@@ -110,12 +110,14 @@
                         <label for="InputName" class="form-label">Full Name <span class="text-danger">*</span></label>
                         <input type="text" name="name" class="form-control" id="InputName" placeholder="John Doe"
                             autocomplete="name" aria-required="true" required>
+                            <div class="text-danger" id="name-error"></div>
                     </div>
                     <div class="mb-3">
                         <label for="InputEmail" class="form-label">Email address <span
                                 class="text-danger">*</span></label>
                         <input type="email" name="email" class="form-control" id="InputEmail"
                             placeholder="Enter your email" aria-required="true" autocomplete="email" required>
+                            <div class="text-danger" id="email-error"></div>
                     </div>
                     <div class="mb-3">
                         <label for="InputPhone" class="form-label fw-semibold">Phone Number <span
@@ -132,6 +134,7 @@
                         <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
                         <textarea class="form-control" name="message" id="message" rows="4"
                             placeholder="Type your message here..." aria-required="true" required></textarea>
+                            <div class="text-danger" id="message-error"></div>
                     </div>
                     <button type="submit" class="rounded-2 w-100 fs-5 fw-bold py-2">Send Message</button>
                 </form>
