@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -23,7 +25,7 @@
             <p class="text-secondary fs-4">Advanced On-Site IT & Media Field Services</p>
         </div>
     </header>
-    <nav class="py-3 text-capitalize fw-bold text-large fs-5">
+    <nav aria-label="Main navigation" class="py-3 text-capitalize fw-bold text-large fs-5">
         <ul>
             <li>
                 <a href="#services">services</a>
@@ -38,11 +40,11 @@
     </nav>
     <div class="all-sections px-2 pt-3">
         <!-- Services -->
-        <div id="services"
+        <section id="services"
             class="container services-container my-5 text-white text-capitalize fw-bold fs-6 bg-dark rounded-4 py-3">
             <ul>
                 <li>
-                    <p class="h1 fw-bold containes-heading">Our Services</p>
+                    <h2 class="h1 fw-bold containes-heading">Our Services</h2>
                 </li>
             </ul>
             <ul class="mx-2">
@@ -72,10 +74,10 @@
                     <p>Remote Troubleshooting & Support Contracts</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- about -->
-        <div id="about"
+        <section id="about"
             class="container about-container text-white text-capitalize fw-bold fs-6 bg-dark rounded-4 py-3">
             <ul>
                 <li>
@@ -88,7 +90,7 @@
                         networks across Pennsylvania, New Jersey, and Delaware.</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- contact -->
         <section id="contact" class="container my-5 bg-dark text-white text-capitalize fw-bold fs-6 rounded-4 py-3">
@@ -112,12 +114,12 @@
                     <div class="mb-3">
                         <label for="InputEmail" class="form-label">Email address <span class="text-danger">*</span></label>
                         <input type="email" name="email" class="form-control" id="InputEmail"
-                            placeholder="Enter your email" autocomplete="email" required>
+                            placeholder="Enter your email" aria-required="true" autocomplete="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="InputPhone" class="form-label fw-semibold">Phone Number <span class="text-danger">*</span></label>
                         <input type="tel" name="phone" class="form-control" id="InputPhone"
-                            placeholder="e.g. (123) 456-7890" required autocomplete="tel">
+                            placeholder="e.g. (123) 456-7890" aria-required="true" required autocomplete="tel">
                     </div>
                     <div class="mb-3">
                         <label for="InputCompany" class="form-label fw-semibold">Company Name</label>
@@ -127,7 +129,7 @@
                     <div class="mb-3">
                         <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
                         <textarea class="form-control" name="message" id="message" rows="4"
-                            placeholder="Type your message here..." required></textarea>
+                            placeholder="Type your message here..." aria-required="true" required></textarea>
                     </div>
                     <button type="submit" class="rounded-2 w-100 fs-5 fw-bold py-2">Send Message</button>
                 </form>
