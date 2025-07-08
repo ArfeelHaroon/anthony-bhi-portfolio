@@ -7,6 +7,7 @@
 body{
      font-family: 'Roboto', sans-serif;
      background-color: rgba(18, 18, 18, 0.233);
+     
 }
 :root {
   --primary-color: #00F6FF; 
@@ -15,6 +16,8 @@ body{
 .heroSection{
     min-height: 40vh;
     background-color: rgba(0, 0, 0, 0.863);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.255)), 
+                url('pics/network-tech.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
