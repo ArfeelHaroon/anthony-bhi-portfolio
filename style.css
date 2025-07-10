@@ -67,9 +67,16 @@ ul{
 #contact form{
     width: 75%;
 }
-button{
+form button, .confirm_btn{
   background-color: var(--primary-color) !important;
 
+}
+
+
+.carousel-img {
+    height: 400px;
+    object-fit: contain;
+    background-color: #000; 
 }
 
 @media (max-width: 500px) {
