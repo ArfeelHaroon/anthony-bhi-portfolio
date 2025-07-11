@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "pos.jpg",
         "pos2.jpg",
         "pos3.jpg",
-        "switch.jpg",
-        "switch2.jpg",
-        "switch4.jpg",
         "systems/system.jpg",
         "systems/system1.jpg",
         "systems/system2.jpg",
@@ -18,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "systems/system6.jpg",
         "systems/system7.jpg",
         "systems/system8.jpg",
+        "switch.jpg",
+        "switch2.jpg",
+        "switch4.jpg",
         "switches.jpg",
         "switches2.jpg",
         "swtich3.jpg",
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             publicKey: "ptbnZvDuFGwqyW_me",
         });
     })();
-    
+
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         // Get values
@@ -55,24 +55,24 @@ document.addEventListener("DOMContentLoaded", function () {
             // const phone = document.getElementById("InputPhone").value.trim();
             // const company = document.getElementById("InputCompany").value.trim();
             const message = document.getElementById("message").value.trim();
-    
+
             // Get error divs
             const nameError = document.getElementById("name-error");
             const emailError = document.getElementById("email-error");
             const messageError = document.getElementById("message-error");
-    
+
             // Clear previous errors
             nameError.textContent = "";
             emailError.textContent = "";
             messageError.textContent = "";
-    
+
             let isValid = true;
-    
+
             if (!name) {
                 nameError.textContent = "Please enter your name.";
                 isValid = false;
             }
-    
+
             if (!email) {
                 emailError.textContent = "Please enter your email.";
                 isValid = false;
@@ -83,15 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     isValid = false;
                 }
             }
-    
+
             if (!message) {
                 messageError.textContent = "Please enter your message.";
                 isValid = false;
             }
-    
+
             return isValid;
         }
-    
+
         //    form submission logic
         if (validateForm()) {
             emailjs.sendForm('service_9122zrm', 'template_srrh8fn', this)
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 confirmButton: 'fs-5 fw-bold text-uppercase px-5 border-0 text-dark confirm_btn'
                             }
                         });
-    
+
                         console.error(error);
                     });
         }
